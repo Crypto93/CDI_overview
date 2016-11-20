@@ -1,18 +1,19 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
-  <modelVersion>4.0.0</modelVersion>
-  <groupId>cdi.demos</groupId>
-  <artifactId>CDI_demo_05</artifactId>
-  <packaging>jar</packaging>
-  <version>1.0-SNAPSHOT</version>
-  <name>CDI_demo_05</name>
-  <url>http://maven.apache.org</url>
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>cdi.demos</groupId>
+	<artifactId>CDI_demo_05</artifactId>
+	<packaging>jar</packaging>
+	<version>1.0-SNAPSHOT</version>
+	<name>CDI_demo_05</name>
+	<url>http://maven.apache.org</url>
 	<properties>
 		<version.java>1.7</version.java>
 		<!-- Java EE -->
 		<version.deltaspike>1.2.1</version.deltaspike>
 		<version.weld>2.2.8.Final</version.weld>
 		<version.cdi>1.2</version.cdi>
+		<version.log4j>2.1</version.log4j>
 		<!-- Test -->
 		<version.junit>4.12</version.junit>
 		<!-- Maven Plugins -->
@@ -74,6 +75,11 @@
 			<artifactId>junit</artifactId>
 			<version>${version.junit}</version>
 			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.logging.log4j</groupId>
+			<artifactId>log4j-core</artifactId>
+			<version>${version.log4j}</version>
 		</dependency>
 	</dependencies>
 
