@@ -2,7 +2,10 @@ package cdi.demos;
 
 import javax.enterprise.inject.Alternative;
 
-@Alternative
+import cdi.demos.qualifiers.BiseraQualifier;
+import cdi.demos.qualifiers.RingsQualifier;
+
+@Alternative @BiseraQualifier @RingsQualifier
 public class AnotherTransferImpl implements Transport {
 
 	@Override
