@@ -1,4 +1,4 @@
-package cdi.demos.example01;
+package cdi.demos;
 
 public class Rings implements Transport {
 

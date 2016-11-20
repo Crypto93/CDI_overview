@@ -1,4 +1,4 @@
-package cdi.demos.example02;
+package cdi.demos;
 
 import javax.enterprise.inject.Alternative;
 
