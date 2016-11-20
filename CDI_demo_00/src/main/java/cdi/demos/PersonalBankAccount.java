@@ -1,23 +1,19 @@
 package cdi.demos;
 
-import javax.inject.Inject;
-
 public class PersonalBankAccount {
 
-	@Inject
 	private Transport transport;
 
 	
-	/*@Inject
-	public PersonalBankAccount(Transfer transfer) {
+	public PersonalBankAccount(Transport transport) {
 		super();
-		this.transfer = transfer;
-	}*/
+		this.transport = transport;
+	}
 	
-	/*@Inject
-	public void setTransfer(Transfer transfer) {
-		this.transfer = transfer;
-	}*/
+
+	public void setTransport(Transport transport) {
+		this.transport = transport;
+	}
 
 	public String deposit() {
 		return "\n###Deposit Operation\n#" + transport.sendTransportRequest();
