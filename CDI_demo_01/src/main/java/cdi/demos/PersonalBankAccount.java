@@ -8,17 +8,17 @@ public class PersonalBankAccount {
 	private Transport transport;
 
 	
-	/*@Inject
-	public PersonalBankAccount(Transfer transfer) {
+/*	@Inject
+	public PersonalBankAccount(Transport transport) {
 		super();
-		this.transfer = transfer;
+		this.transport = transport;
 	}*/
 	
-	/*@Inject
-	public void setTransfer(Transfer transfer) {
-		this.transfer = transfer;
-	}*/
-
+/*	@Inject
+	public void setTransfer(Transport transport) {
+		this.transport = transport;
+	}
+*/
 	public String deposit() {
 		return "\n###Deposit Operation\n#" + transport.sendTransportRequest();
 	}
